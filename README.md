@@ -1,8 +1,6 @@
 # Simplefraction
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/simplefraction`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Small Ruby gem for creating, manipulating and displaying fractions.
 
 ## Installation
 
@@ -22,7 +20,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# setting up
+require 'simplefraction'
+fraction = Simplefraction::Fraction.new(1, 2) 
+
+# get value
+puts fraction.to_decimal => 0.5
+puts fraction.to_d => 0.5
+
+# get individual value
+fraction.num => 1
+fraction.den => 2
+
+# set individual values
+fraction.num=(2)
+fraction.den=(4)
+fraction.value => 0.5 # make sure it worked
+
+# display as string
+fraction.display => "(2/4)"
+```
 
 ## Development
 
@@ -32,7 +50,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/simplefraction. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Punknoodles/simplefraction. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
