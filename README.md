@@ -26,20 +26,20 @@ require 'simplefraction'
 fraction = Simplefraction::Fraction.new(1, 2) 
 
 # get value
-puts fraction.to_decimal => 0.5
-puts fraction.to_d => 0.5
+puts fraction.to_decimal #=> 0.5
+puts fraction.to_d #=> 0.5
 
 # get individual value
-fraction.num => 1
-fraction.den => 2
+fraction.num #=> 1
+fraction.den #=> 2
 
 # set individual values
 fraction.num=(2)
 fraction.den=(4)
-fraction.value => 0.5 # make sure it worked
+fraction.to_d #=> 0.5
 
 # display as string
-fraction.display => "(2/4)"
+fraction.display #=> "(2/4)"
 ```
 
 ## Development
